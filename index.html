@@ -5,6 +5,8 @@
         <style>
             * {
                 font-family:Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: rgb(104, 104, 104);
             }
             .navbar {
                 position: fixed;
@@ -23,7 +25,6 @@
                 left: 20px;
             }
             .link {
-                color: rgb(59, 59, 59);
                 text-decoration: none;
             }
             .link:hover {
@@ -35,6 +36,27 @@
             .logo {
                 display: block;
                 margin: 0 auto;
+            }
+            .form-container {
+                text-align: center;
+            }
+            #searchbar {
+                width: 450px;
+                height: 30px;
+                border-radius: 2em;
+                border-style: solid;
+                border-color: rgb(202, 202, 202);
+                border-width: 0.1em;
+                color: #000;
+            }
+            .search-button-container {
+                margin: 1.5em auto;
+            }
+            .button {
+                border-style: solid;
+                padding: 0.5em 1em;
+                border-radius: 0.3em;
+                border-width: 0;               
             }
         </style>
     </head>
@@ -53,6 +75,17 @@
         </nav>
         <div class="img-container">
             <img src="./images/google-logo.png" class="logo">
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="searchbar-container">
+                    <input type="text" id="searchbar" name="searchbar">
+                </div>
+                <div class="div search-button-container">
+                    <button type="submit" name="search-button" id="search-button" class="button">Google Search</button>
+                    <button type="submit" name="lucky-button" id="lucky-button" class="button">I'm Feeling Lucky</button>
+                </div>
+            </form>
         </div>
     
     </body>
