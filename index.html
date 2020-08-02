@@ -49,12 +49,20 @@
                 margin: 2em;
             }
             #searchbar {
-                width: 470px;
-                height: 35px;
+                box-sizing: border-box;
+                width: 570px;
+                height: 45px;
                 border-radius: 2em;
                 border-style: solid;
                 border-color: rgb(202, 202, 202);
                 border-width: 0.1em;
+                padding: 0 0 0 3em;
+                background-image: url("/images/search-icon.png"), url("/images/speech-icon.png");
+                background-repeat: no-repeat;
+                background-position: 1em, calc(100% - 1em); /*calc may not be supported in all browsers*/
+            }
+            #searchbar:focus {
+                outline: none;
             }
             .search-button-container {
                 margin: 1.5em auto;
