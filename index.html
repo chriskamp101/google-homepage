@@ -18,11 +18,13 @@
             .nav-right {
                 position: absolute;
                 right: 20px;
-
             }
             .nav-left {
                 position: absolute;
                 left: 20px;
+            }
+            .navbar > * > * {
+                padding: 0 0.5em;
             }
             .link {
                 text-decoration: none;
@@ -30,6 +32,10 @@
             }
             .link:hover {
                 text-decoration: underline;
+            }
+            .navbar-img {
+                display: inline-block;
+                vertical-align: middle;
             }
             .img-container {
                 margin: 220px 0 0 0;
@@ -100,8 +106,8 @@
                 <span class="nav-right">
                     <a href="" target="_blank" class="link">Gmail</a>
                     <a href="" target="_blank" class="link">Images</a>
-                    <a href="" target="_blank" class="link">[X]</a>
-                    <a href="" target="_blank" class="link">(O)</a>
+                    <a href="" target="_blank" class="link"><img src="images/app-selector.png" class="navbar-img"></a>
+                    <a href="" target="_blank" class="link"><img src="images/account.png" class="navbar-img"></a>
                 </span>
             </nav>
         </header>
